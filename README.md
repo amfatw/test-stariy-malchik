@@ -1,4 +1,2 @@
-rex serbian не нашёл
-
-gulp dev
-gulp build
+`gulp dev` для запуска и разработки
+`gulp build` для продакшен сборки
