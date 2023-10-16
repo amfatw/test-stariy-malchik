@@ -1,0 +1,61 @@
+.contact {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.contact__number {
+  font-size: 24px;
+}
+
+.contact__link {
+  position: relative;
+
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  color: $font-color-main;
+  text-transform: uppercase;
+
+  &::before {
+    position: absolute;
+    top: 105%;
+    left: -2px;
+    right: -2px;
+
+    content: '';
+    height: 1px;
+    background-color: $color-gold;
+  }
+
+  &:hover,
+  &:focus {
+    color: $font-color-additional;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+
+@media (min-width: $tablet-min-width) {
+  .contact {
+    text-align: end;
+  }
+  
+  .contact__link {  
+    &::before {
+      top: 130%;
+      left: 10%;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-min-width) {
+  .contact__link {  
+    &::before {
+      left: -2px;
+    }
+  }
+}

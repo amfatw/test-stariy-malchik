@@ -1,0 +1,35 @@
+{
+  "name": "test-stariy-malchik",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "browserslist": [
+    "last 3 version"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
+    "del": "^7.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-server-livereload": "^1.9.2",
+    "sass": "^1.69.3"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  }
+}

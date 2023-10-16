@@ -1,0 +1,58 @@
+<div class="form page-main__form">
+  <h2 class="form__header">Заполни форму</h2>
+  <p class="form__text">И мы вышлем фин. модель на твою почту</p>
+
+  <form>
+    <div class="input form__input">
+      <input
+        class="input__input"
+        type="text"
+        placeholder="Имя"
+      >
+    </div>
+    
+    <div class="input form__input">
+      <input
+        class="input__input"
+        id="form-number"
+        type="number"
+        data-reg="^(\+)?((\d{2,3}) ?\d|\d)(([ -]?\d)|( ?(\d{2,3}) ?)){5,12}\d$"
+        placeholder="Телефон"
+      >
+      <p class="input__validation-message">
+        некорректный номер телефона
+      </p>
+    </div>
+    
+    <div class="input form__input">
+      <input
+        class="input__input"
+        id="form-mail"
+        type="email"
+        data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$"
+        placeholder="E-mail"
+      >
+      <p class="input__validation-message">
+        некоректная почта
+      </p>
+    </div>
+
+    <label class="checkbox form__checkbox">
+      <input 
+        class="checkbox__checkbox visually-hidden"
+        id="form-checkbox"
+        type="checkbox"
+      >
+      <span class="checkbox__view"></span>
+      <p class="checkbox__text">
+        Я соглашаюсь с<br>
+        <a class="checkbox__link" href="#">политикой конфиденциальности</a>
+      </p>
+      <p class="checkbox__validation-message">
+        согласие обязательно
+      </p>
+    </label>
+
+    <button class="button form__button" type="submit">Отправить</button>
+  </form>
+</div>

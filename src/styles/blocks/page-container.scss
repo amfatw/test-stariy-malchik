@@ -1,0 +1,40 @@
+.page-container {
+  min-width: $mobile-min-width;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-top: 26px;
+
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('images/bg-mobile.jpg');
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+
+@media (min-width: $tablet-min-width) {
+  .page-container {
+    min-width: $tablet-min-width;
+    padding: 0 40px;
+    padding-top: 52px;
+
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('images/bg-tablet.jpg');
+  }
+}
+
+
+@media (min-width: $desktop-min-width) {
+  .page-container {
+    min-width: $desktop-min-width;
+    max-width: $desktop-max-width;
+    padding: 0 50px;
+    padding-top: 61px;
+
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('images/bg-desktop.jpg');
+      background-position: top center;
+  }
+}
